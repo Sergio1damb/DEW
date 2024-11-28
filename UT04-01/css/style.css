@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #414141;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid,
+input:required:invalid  {
+  border: 1px solid red;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="checkbox"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  background-color: #2899bb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button[type="submit"]:hover {
+  background-color: #1e738d;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+#mostrar_contraseña {
+  margin-top: 5px;
+}
+
+fieldset:last-of-type textarea {
+  height: 80px;
+  resize: none;
+}
+
+fieldset legend + label {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+fieldset legend + label input {
+  margin-right: 5px;
+}
